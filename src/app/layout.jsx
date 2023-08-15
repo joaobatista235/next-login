@@ -1,8 +1,8 @@
 import '../styles/globals.css'
-import { Orelega_One } from 'next/font/google'
+import { Open_Sans } from 'next/font/google'
 import StyledComponentsRegistry from './registry'
 
-const font = Orelega_One({ subsets: ['latin'], weight: '400' })
+const font = Open_Sans({ subsets: ['latin'], weight: '400' })
 
 export const metadata = {
   title: 'TGMEDICO',
