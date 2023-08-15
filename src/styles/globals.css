@@ -1,12 +1,11 @@
-:root{
+:root {
   --main-color: #85c9b8;
   --white: #FFFFFF;
 }
 
 html,
 body {
-  padding: 0;
-  margin: 0;
+
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
@@ -18,14 +17,7 @@ a {
 
 * {
   box-sizing: border-box;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
