@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useState } from 'react'
-import { Item, Logo, Menu, Nav } from './Styles'
+import { Button, GroupButtons, Item, Logo, Menu, Nav } from './Styles'
 import Link from 'next/link'
 import Image from 'next/image'
 import { AnimatePresence, motion } from 'framer-motion'
@@ -35,7 +35,7 @@ const Header = () => {
       <Menu>
         <div className="desktop">
           {items.map((index) => (
-            <Item>
+            <Item key={index.name}>
               <Link href={index.url}>
                 {index.name}
               </Link>
@@ -128,12 +128,21 @@ const Header = () => {
                     Contato
                   </Link>
                 </Item>
-
               </motion.div>
             )}
           </AnimatePresence>
 
         </div>
+
+        <GroupButtons >
+          <button className='login'>
+            Entrar
+          </button>
+          <button className='signup'>
+            Cadastrar
+            <Image src={'/arrow.png'} alt='' width={20} height={20} />
+          </button>
+        </GroupButtons>
       </Menu>
     </Nav>
   )
